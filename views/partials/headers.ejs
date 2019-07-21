@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Computer Viruses
+	</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Monoton|Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main-layout">
+
+		<div class="nav">
+			<div id="logo-div">
+				<img id="logo" src="img/logo.png" alt="Logo">
+			</div>
+			<div id="home">
+  				<a href="/" class="<% if(page=='index') { %>active <% } %>">Home</a>
+  			</div>
+  			<div id="history">
+  				<a href="/history" class="<% if(page=='history') { %>active <% } %>">History</a>
+  			</div>
+  			<div id="types">
+  				<a href="/types" class="<% if(page=='types' || page== 'memory-viruses' || page=='boot' || page=='direct-viruses' || page=='directory-viruses' || page=='trojans' || page=='poly-viruses' || page=='overwrite-viruses' || page=='multi-viruses' || page=='macro-viruses' || page=='email-viruses') { %>active <% } %>">Types of Viruses</a>
+  			</div>
+  			<div id="recovery">
+  				<a href="/recovery" class="<% if(page=='recovery') { %>active <% } %>">Prevention</a>
+  			</div>
+  			<div id="facts">
+  				<a href="/facts" class="<% if(page=='facts') { %>active <% } %>">Last Detected Virus</a>
+  			</div>
+		</div>
+
+		<div class="main-panel">
+			<div class="text-panel">

@@ -1,0 +1,60 @@
+<% include partials/headers %>
+<h2>Where was the last virus detected?</h2>
+<div id="virus-container">
+<table id="virus-table">
+	<tr>
+		<td>
+			File Name
+		</td>
+		<td>
+			<%= fileName %>
+		</td>
+	</tr>
+	<tr>
+		<td> 
+			Mime Type
+		</td>
+		<td>
+			<%= mimeType %>
+		</td>
+	</tr>
+	<tr>
+		<td class="date"> 
+			File Type
+		</td>
+		<td>
+			<%= fileType %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			File Extension
+		</td>
+		<td>
+			<%= fileExt %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Common File Extension
+		</td>
+		<td>
+			<%= commonFileExt %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Semver
+		</td>
+		<td>
+			<%= semver %>
+		</td>
+	</tr>
+</table>
+</div>
+<div>
+<p>Possible source of the virus is <span id="detect"><%= source %></span></p>
+<a class="read-again" href="/">Back to the beginning</a>
+				Information source of all the data in this page is  <a href="https://www.npmjs.com/package/faker">Faker</a>.
+</div>
+<% include partials/footer %>
